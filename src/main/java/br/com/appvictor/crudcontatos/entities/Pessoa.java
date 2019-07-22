@@ -1,4 +1,4 @@
-package br.com.appvictor.crudcontatos.entity;
+package br.com.appvictor.crudcontatos.entities;
 
 import java.util.Date;
 
