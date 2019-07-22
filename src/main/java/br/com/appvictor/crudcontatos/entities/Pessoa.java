@@ -27,6 +27,13 @@ public class Pessoa {
 	
 	private String cpf;
 	
+	public Pessoa(String nome, String cpf, String email) {
+		super();
+		this.nome = nome;
+		this.cpf = cpf;
+		this.email = email;
+	}
+
 	private Date dataNascimento;
 	
 	private String email;

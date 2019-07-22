@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -40,12 +41,12 @@ public class PessoaController {
 	}
 	
 	@PostMapping("/pessoa")
-	public Pessoa createPessoa(Pessoa pessoa) {
+	public Pessoa createPessoa(@RequestBody Pessoa pessoa) {
 		return pessoaRepository.save(pessoa);
 	}
 	
 	@PutMapping("/pessoa")
-	public Pessoa updatePessoa(Pessoa pessoa) {
+	public Pessoa updatePessoa(@RequestBody Pessoa pessoa) {
 		return pessoaRepository.save(pessoa);
 	}
 }
